@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: Cert4-GameDesign-MedievalProps.ma
-//Last modified: Sun, May 08, 2022 11:12:46 PM
+//Last modified: Sun, May 08, 2022 11:20:28 PM
 //Codeset: 1252
 requires maya "2022";
 requires "mtoa" "5.0.0.1";
@@ -10,11 +10,11 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202110272215-ad32f8f1e6";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19044)";
-fileInfo "UUID" "C35B0297-4ED7-40C6-2BCB-FEBC50579F1D";
+fileInfo "UUID" "D62CB257-4F4D-A596-7EA3-9492287F0FD9";
 createNode transform -s -n "persp";
 	rename -uid "296BBF40-4DBE-0145-1A4E-5D8709C9EE88";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -6.2185781595950145 8.7109225391300846 7.0769191575902139 ;
+	setAttr ".t" -type "double3" -12.56403028598028 17.59956887116185 5.0396173603263197 ;
 	setAttr ".r" -type "double3" 306.86164727818829 -1907.8000000013517 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1CF7FA7D-4A6E-C0E0-4FD1-38ADF40DB981";
@@ -23,7 +23,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 10.887477471235059;
+	setAttr ".coi" 21.997085696430215;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -169,7 +169,6 @@ createNode mesh -n "Crate" -p "Crate3";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "Crate4";
 	rename -uid "53FEA98F-4DE8-3D49-45A6-B7815B2FDDBC";
-	setAttr ".t" -type "double3" 0 0 9.0734861804897413 ;
 createNode mesh -n "Crate4" -p "|Crate4";
 	rename -uid "5F2B4160-4B59-3BAB-22BF-79AFB04A99DE";
 	setAttr -k off ".v";
